@@ -5,14 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html,
 body {
-  font-family: "SS-regular", sans-serif;
+  font-family: "SS-regular", "맑은고딕", sans-serif;
   font-size: 10px;
   color: #000;
   line-height: 1.5;
   letter-spacing: -0.23px;
+  text-size-adjust: 100%;
   overflow-x: hidden;
   background-color: #fff;
 }
@@ -27,4 +27,9 @@ a {
 }
 img {
   border: 0;
+  vertical-align: middle;
+}
+
+.wrap {
+  width: 100%;
 }
