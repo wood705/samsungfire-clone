@@ -13,12 +13,10 @@
   display: flex;
   justify-content: space-between;
 }
-
 .main-left {
   position: relative;
-  width: 775px;
+  width: 776px;
 }
-
 /* 로그인 메뉴 모바일 */
 .login-wrap-mb {
   display: none;
