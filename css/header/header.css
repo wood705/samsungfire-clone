@@ -123,6 +123,23 @@
   /* align-items: center; */
 }
 .gnb ul li {
+  position: relative;
+}
+.gnb ul li::after {
+  content: "";
+  position: absolute;
+  top: 79px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: center;
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #0b0d0f;
+  transition: all 0.3s;
+}
+.gnb ul li:hover::after {
+  width: 100%;
 }
 .gnb ul li a {
   height: 100%;
