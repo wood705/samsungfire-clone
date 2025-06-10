@@ -168,3 +168,23 @@
 }
 .etc-menu ul li a img {
 }
+
+@media screen and (max-width: 1219px) {
+  .header {
+    height: 54px;
+  }
+  .header-top,
+  .gnb,
+  .etc-menu {
+    display: none;
+  }
+  .header-bottom {
+    position: fixed;
+    height: 54px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 585px) {
+}
