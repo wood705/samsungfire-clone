@@ -206,3 +206,119 @@
   height: 100%;
   object-fit: contain;
 }
+.sns-wrap-mb,
+.policy-wrap-mp {
+  display: none;
+}
+
+@media screen and (max-width: 1219px) {
+  /* 푸터 모바일 */
+  .footer-top,
+  .footer-bottom .inner .policy {
+    display: none;
+  }
+  .footer-bottom .inner {
+    padding: 3rem 2.4rem 14rem;
+  }
+  .sns-wrap-mb,
+  .policy-wrap-mp {
+    display: block;
+  }
+  .sns-wrap-mb {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .sns-wrap-mb ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .sns-wrap-mb ul li {
+    position: relative;
+    padding-left: 2.1rem;
+  }
+  .sns-wrap-mb ul li:first-child {
+    padding: 0;
+  }
+  .sns-wrap-mb ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e8;
+  }
+  .sns-wrap-mb ul li:first-child:before {
+    display: none;
+  }
+  .sns-wrap-mb ul li a {
+  }
+  .sns-wrap-mb ul li a img {
+  }
+  .policy-wrap-mp {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.6rem;
+  }
+  .policy-wrap-mp .policy-item {
+    position: relative;
+  }
+  .policy-wrap-mp .policy-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.9rem;
+    transform: translateY(-50%);
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e8;
+  }
+  .policy-wrap-mp .policy-item:nth-of-type(1)::before {
+    display: none;
+  }
+  .policy-wrap-mp .policy-item:nth-of-type(7)::before {
+    display: none;
+  }
+  .policy-wrap-mp .policy-item:nth-of-type(10)::before {
+    display: none;
+  }
+  .policy-wrap-mp .policy-item-br {
+    position: relative;
+    flex: 0 0 100%;
+  }
+  .policy-wrap-mp .policy-item a {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+  .footer-bottom .inner .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-bottom .inner .info .info-right {
+    order: 0;
+    margin-bottom: 2rem;
+  }
+  .footer-bottom .inner .info .info-left {
+  }
+
+  .footer-bottom .inner .info .info-left ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 2rem;
+  }
+  .footer-bottom .inner .info .info-left ul li.flex-full {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .footer-bottom .inner .info .info-left ul li::before {
+    display: none;
+  }
+}
