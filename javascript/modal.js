@@ -13,21 +13,8 @@ modalMenuBtn.addEventListener("click", (e) => {
   modalWrap.style.right = 0;
 });
 
-// 모달에서 스크롤 시 모달헤더 고정
-modalInner.addEventListener("scroll", () => {
-  if (modalInner.scrollTop <= 0) {
-    modalHeader.style.position = "absolute";
-    modalCloseBtn.style.position = "absolute";
-  } else {
-    modalHeader.style.position = "fixed";
-    modalCloseBtn.style.position = "fixed";
-  }
-});
-
 // 모달 닫기 버튼 기능
 modalCloseBtn.addEventListener("click", () => {
-  modalHeader.style.position = "absolute";
-  modalCloseBtn.style.position = "absolute";
   modalWrap.style.right = "-100%";
   document.documentElement.style.overflowY = "auto";
 });
